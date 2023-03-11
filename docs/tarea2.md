@@ -2,7 +2,7 @@
 
 Para agregar una nueva página a su aplicación siga los siguientes pasos:
 
-1. Agregue un nuevo controlador a la aplicación. Cree una clase controlador `HelloController` dentro de la carpeta `ejemplo/src/main/java`, en el paquete `co.edu.uan.sofeng.ejemplo` con el siguiente código:
+1. **Agregue un nuevo controlador a la aplicación**. Cree una clase controlador `HelloController` dentro de la carpeta `ejemplo/src/main/java`, en el paquete `co.edu.uan.sofeng.ejemplo` con el siguiente código:
 
    ```java
    package co.edu.uan.sofeng.ejemplo;
@@ -19,7 +19,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
    } 
    ```
 
-2. Ejecute la aplicación. Use el siguiente comando desde la carpeta `ejemplo`:
+2. **Ejecute la aplicación**. Use el siguiente comando desde la carpeta `ejemplo`:
 
    ```bash
    ./gradlew bootRun
@@ -27,7 +27,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
 
    Debería poder abrir la página web desde su navegador en la dirección `http://localhost:8080`
 
-3. Agregue sus pruebas unitarias. Cree una clase de pruebas dentro de la carpeta `ejemplo/src/test/java`, en el paquete `co.edu.uan.sofeng.ejemplo` con el siguiente código:
+3. **Agregue sus pruebas unitarias**. Cree una clase de pruebas dentro de la carpeta `ejemplo/src/test/java`, en el paquete `co.edu.uan.sofeng.ejemplo` con el siguiente código:
 
    ```java
    package co.edu.uan.sofeng.ejemplo;
@@ -47,7 +47,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
 
    @SpringBootTest
    @AutoConfigureMockMvc
-   public class HelloControllerTest {
+   public class HelloControllerTests {
 
       @Autowired
       private MockMvc mvc;
@@ -61,7 +61,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
    }
    ```
 
-4. Ejecute las pruebas unitarias. Para esto use el siguiente comando desde la carpeta `ejemplo`:
+4. **Ejecute las pruebas unitarias**. Para esto use el siguiente comando desde la carpeta `ejemplo`:
 
    ```bash
    ./gradlew test
@@ -71,7 +71,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
 
    ```bash
    ...
-   BUILD SUCCESSFUL in 6s
+   BUILD SUCCESSFUL in 2s
    4 actionable tasks: 2 executed, 2 up-to-date
    ```
 
@@ -92,7 +92,7 @@ Para agregar una nueva página a su aplicación siga los siguientes pasos:
    import static org.assertj.core.api.Assertions.assertThat;
 
    @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-   public class HelloControllerIntegrationTest {
+   public class HelloControllerIntegrationTests {
 
       @Autowired
       private TestRestTemplate template;

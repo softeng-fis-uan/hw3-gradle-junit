@@ -15,7 +15,7 @@ def testSayHello():
         assert re.search(p, source)
 
 def testSayHelloTest():
-    file = open('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTest.java',mode='r')
+    file = open('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTests.java',mode='r')
     source = file.read()
     file.close()
     properties = [
@@ -36,7 +36,7 @@ def testSayHelloParam():
 
 
 def testSayHelloParamTest():
-    file = open('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTest.java',mode='r')
+    file = open('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTests.java',mode='r')
     source = file.read()
     file.close()
     properties = [
@@ -52,8 +52,8 @@ def testRunTests():
     assert re.search("BUILD SUCCESSFUL", result)
 
 def testResults():
-    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTest.xml')
-    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTest.xml',mode='r')
+    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTests.xml')
+    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTests.xml',mode='r')
     results = file.read()
     file.close()
     properties = [

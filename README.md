@@ -7,15 +7,15 @@ Esta es una asignación **individual**.
 ## Pre-requisitos
 
 1. Instale Docker
-2. Instale Heroku CLI
+2. Clone localmente su repositorio
 
 ## Tareas
 
-1. Cree la aplicación web usando Spring Initializer (20 puntos)
-2. Agregue el primer controlador a su aplicación (20 puntos)
-3. Agregue un nuevo método a su controlador (40 puntos)
-4. Cree un contenedor para su aplicación usando Docker (20 puntos)
+1. [Cree la aplicación web usando Spring Initializer (20 puntos)](docs/tarea1.md)
+2. [Agregue el primer controlador a su aplicación (20 puntos)](docs/tarea2.md)
+3. [Agregue un nuevo método a su controlador (40 puntos)](docs/tarea3.md)
+4. [Cree un contenedor para su aplicación usando Docker (20 puntos)](docs/tarea4.md)
 
 ## Calificación
 
-Para enviar su código a revisión haga commit de su código y subalo a github usando los comandos.
+Para enviar su código a revisión haga `commit` de su código y subalo a github.

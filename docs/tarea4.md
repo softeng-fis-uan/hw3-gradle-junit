@@ -1,8 +1,8 @@
 # Crear un contenedor usando Docker
 
-En esta sección usted creara un contenedor para la aplicacion usando Docker. Antes de comenzar asegurese que Docker Desktop este corriendo en su computador.
+En esta sección usted creará un contenedor para la aplicacioó usando Docker. Antes de comenzar asegurese que Docker Desktop este corriendo en su computador.
 
-1. Cree el archivo Dockerfile para su aplicación. Dentro de la carpeta ejemplo cree un archivo `Dockerfile` con el siguiente contenido:
+1. **Cree el archivo `Dockerfile` para su aplicación**. Dentro de la carpeta ejemplo cree un archivo `Dockerfile` con el siguiente contenido:
 
    ```docker
    FROM eclipse-temurin:11
@@ -46,13 +46,13 @@ En esta sección usted creara un contenedor para la aplicacion usando Docker. An
     => => naming to docker.io/library/ejemplo:latest                                                                        0.0s
    ```
 
-3. Iniciar el contenedor de la aplicacion. Inicie la aplicacion usando el comando `docker run` y especificando el nombre de la imagen que acaba de crear:
+3. **Iniciar el contenedor de la aplicación**. Inicie la aplicación usando el comando `docker run` y especificando el nombre de la imagen que acaba de crear:
 
    ```bash
    docker run -dp 8080:8080 ejemplo
    ```
 
-   Despues de unos segundos podra ingresar a `http://localhost:8080` y ver su aplicacion funcionando.
+   Despues de unos segundos podra ingresar a `http://localhost:8080` y ver su aplicación funcionando.
 
 4. Otros comandos que puede usar con docker.
 

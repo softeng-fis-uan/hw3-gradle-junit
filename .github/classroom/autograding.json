@@ -1,0 +1,44 @@
+{
+    "tests": [
+      {
+        "name": "Tarea 1",
+        "setup": "pip3 install pipenv && pipenv install pytest",
+        "run": "pipenv run pytest -rA checks/check1.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 20
+      },
+      {
+        "name": "Tarea 2",
+        "setup": "",
+        "run": "pipenv run pytest -rA checks/check2.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 20
+      },
+      {
+        "name": "Tarea 3",
+        "setup": "",
+        "run": "pytest -rA checks/check3.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 40
+      },
+      {
+        "name": "Tarea 4",
+        "setup": "",
+        "run": "pytest -rA checks/check4.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 20
+      }
+    ]
+  }

@@ -2,16 +2,14 @@ import subprocess
 import re
 import os
 
-# pipenv run pytest -rA checks/check2.py -k 'test'
-
 def testController():
     assert os.path.exists('ejemplo/src/main/java/co/edu/uan/sofeng/ejemplo/HelloController.java')
 
 def testControllerTest():
-    assert os.path.exists('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTest.java')
+    assert os.path.exists('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerTests.java')
 
 def testControllerIntegrationTest():
-    assert os.path.exists('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerIntegrationTest.java')
+    assert os.path.exists('ejemplo/src/test/java/co/edu/uan/sofeng/ejemplo/HelloControllerIntegrationTests.java')
 
 def testRunTests():
     result = subprocess.check_output(['./gradlew', 'test'], cwd='ejemplo').decode()
@@ -19,8 +17,8 @@ def testRunTests():
     assert re.search("BUILD SUCCESSFUL", result)
 
 def testResults():
-    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTest.xml')
-    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTest.xml',mode='r')
+    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTests.xml')
+    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerTests.xml',mode='r')
     results = file.read()
     file.close()
     properties = [
@@ -35,8 +33,8 @@ def testResults():
     
 
 def testIntegrationResults():
-    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerIntegrationTest.xml')
-    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerIntegrationTest.xml',mode='r')
+    assert os.path.exists('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerIntegrationTests.xml')
+    file = open('ejemplo/build/test-results/test/TEST-co.edu.uan.sofeng.ejemplo.HelloControllerIntegrationTests.xml',mode='r')
     results = file.read()
     file.close()
     properties = [

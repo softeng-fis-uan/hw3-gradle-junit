@@ -18,9 +18,9 @@
      - Spring Data JPA
      - H2 Database
 
-2. Descargue el proyecto de Spring y descomprimalo dentro de la carpeta de este repositorio. Deberá tener una nueva carpeta en el respositorio llamada ejemplo.
+2. Descargue el proyecto de Spring y descomprimalo dentro de la carpeta de este repositorio. Deberá tener una nueva carpeta en su repositorio llamada `ejemplo`.
 
-3. Puede probar el proyecto ejecutando alguno de los comandos
+3. Puede probar el proyecto ejecutando alguno de los comandos:
 
    - Windows
 
