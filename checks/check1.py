@@ -2,6 +2,8 @@ import subprocess
 import re
 import os
 
+# NO MODIFICAR ESTE ARCHIVO
+
 def testFiles():
     assert os.path.exists('ejemplo')
     assert os.path.exists('ejemplo/gradlew')
@@ -11,7 +13,7 @@ def testProjectMetadata():
     build = file.read()
     file.close()
     properties = [
-        "group = 'co.edu.uan.sofeng.ejemplo'", 
+        "group = 'co.edu.uan.sofeng'", 
         "sourceCompatibility = '17'",
         "org.springframework.boot:spring-boot-starter-data-jpa",
 	    "org.springframework.boot:spring-boot-starter-web",

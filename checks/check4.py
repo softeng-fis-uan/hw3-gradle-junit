@@ -2,7 +2,7 @@ import subprocess
 import re
 import os
 
-# pipenv run pytest -rA checks/check2.py -k 'test'
+# NO MODIFICAR ESTE ARCHIVO
 
 def testDockerfile():
     assert os.path.exists('ejemplo/Dockerfile')
