@@ -6,7 +6,7 @@ Esta es una asignación **individual**.
 
 ## Pre-requisitos
 
-1. Instale Docker
+1. Instale [Docker](https://www.docker.com/)
 2. Clone localmente su repositorio
 
 ## Tareas
